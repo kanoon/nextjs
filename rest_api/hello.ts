@@ -20,7 +20,9 @@ import { ExecOptions } from "child_process";
 
 export const fetchPublicData = async (): Promise<string> => {
   console.log("fetchPublicData called");
-  const res = await fetch(``);
+  const res = await fetch(
+    ``
+  );
   const result = await res.text();
 
   console.log(`fetchPublicData result: ${result}`);
@@ -30,7 +32,9 @@ export const fetchPublicData = async (): Promise<string> => {
 export const fetchPrivateData = async (): Promise<string> => {
   console.log("fetchPrivateData called");
   try {
-    const res = await fetch(``);
+    const res = await fetch(
+      ``
+    );
     const result = await res.text();
 
     console.log(`fetchPrivateData result: ${result}`);
