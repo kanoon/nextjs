@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 function MyPage() {
+  console.log("MyPage rendering");
   return (
     <div>
       <h1>MyPage</h1>

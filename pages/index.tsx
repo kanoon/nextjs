@@ -11,6 +11,7 @@ interface HomeProps {
 }
 
 const Home = (props: HomeProps) => {
+  console.log("Home rendering");
   const [resultPublic, setPublicResult] = React.useState<string>();
   const [resultPrivate, setPrivateResult] = React.useState<string>();
 
@@ -70,6 +71,7 @@ const Home = (props: HomeProps) => {
 };
 
 export async function getServerSideProps() {
+  console.log("Home.getServerSideProps called");
   const data_public = await fetchPublicData();
   const data_private = await fetchPrivateData();
   return {
